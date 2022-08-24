@@ -25,7 +25,7 @@ app.get("/api/token/:token_id/metadata.json", function (req, res) {
   const day = parseInt(bdayParts[1]);
   const month = parseInt(bdayParts[0]);
   const data = {
-    name: person.name,
+    name: "ISO 14067:2018 碳足跡管理與計算基礎課程研習證書 #1",
     attributes: {
       姓名: "陳振豪",
       證照名稱: "ISO 14067:2018 碳足跡管理與計算基礎課程研習證書",
