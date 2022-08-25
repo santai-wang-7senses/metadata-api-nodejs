@@ -32,7 +32,7 @@ app.get("/api/token/:token_id/metadata.json", function (req, res) {
       領證日期: "2022 年 5 月 25 日",
       發證單位: "財團法人商業發展研究院",
     },
-    image: `${HOST}/images/${tokenId}.jpg`,
+    animation_url: `https://i.imgur.com/g7ygaKj.mp4`,
   };
   res.send(data);
 });
