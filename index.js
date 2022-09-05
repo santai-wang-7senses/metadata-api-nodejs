@@ -20,20 +20,7 @@ app.get("/", function (req, res) {
 
 app.get("/api/token/:token_id/metadata.json", function (req, res) {
   const tokenId = parseInt(req.params.token_id).toString();
-  const person = db[tokenId];
-  const bdayParts = person.birthday.split(" ");
-  const day = parseInt(bdayParts[1]);
-  const month = parseInt(bdayParts[0]);
-  const data = {
-    name: "ISO 14067:2018 碳足跡管理與計算基礎課程研習證書 #1",
-    attributes: {
-      姓名: "陳振豪",
-      證照名稱: "ISO 14067:2018 碳足跡管理與計算基礎課程研習證書",
-      領證日期: "2022 年 5 月 25 日",
-      發證單位: "財團法人商業發展研究院",
-    },
-    animation_url: `https://drive.google.com/uc?export=download&id=1d4W_nyNQtLJD3JBxkufu32y6C9qePxvt`,
-  };
+  const data = db[tokenId];
   res.send(data);
 });
 
