@@ -524,7 +524,7 @@ module.exports = {
       發證日期: "2022 年 9 月 2 日",
       發證單位: "財團法人商業發展研究院",
     },
-    animation_url: `https://drive.google.com/uc?export=download&id=1a4g-OUxSH6P_wUg4cb4flfQvojcIb0sQ`,
+    animation_url: `https://drive.google.com/uc?export=download&id=1k_pbK1jFZEyTe13awYu6sxsz2eTyev-8`,
     background_color: "79b47c",
   },
   45: {
@@ -562,5 +562,5 @@ module.exports = {
     },
     animation_url: `https://drive.google.com/uc?export=download&id=1V4-bjuhpa7sW87-JmC1pHTbjmahNbGvW`,
     background_color: "79b47c",
-  },     
+  },
 };
