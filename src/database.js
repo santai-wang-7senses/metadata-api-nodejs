@@ -157,12 +157,12 @@ module.exports = {
   },
   14: {
     name: "企業ESG永續規劃師研習證書 #14(作廢)",
-    description: "",
+    description: "作廢",
     attributes: {
-      姓名: "",
-      證照名稱: "",
-      發證日期: "",
-      發證單位: "",
+      姓名: "作廢",
+      證照名稱: "作廢",
+      發證日期: "作廢",
+      發證單位: "作廢",
     },
     animation_url: ``,
     background_color: "79b47c",
@@ -564,7 +564,7 @@ module.exports = {
     background_color: "79b47c",
   },
   48: {
-    name: "企業ESG永續規劃師研習證書 #14",
+    name: "企業ESG永續規劃師研習證書 #48",
     description: "",
     attributes: {
       姓名: "李昆憲",
