@@ -1,9 +1,6 @@
 const express = require("express");
 const path = require("path");
-const moment = require("moment");
-const { HOST } = require("./src/constants");
-const db = require("./src/database");
-
+const fs = require("fs");
 const PORT = process.env.PORT || 5000;
 
 const app = express()
@@ -20,7 +17,9 @@ app.get("/", function (req, res) {
 
 app.get("/api/token/:token_id/metadata.json", function (req, res) {
   const tokenId = parseInt(req.params.token_id).toString();
-  const data = db[tokenId];
+  const data = JSON.parse(
+    fs.readFileSync("./mintedNFTs/20221024.json").toString()
+  )[tokenId];
   res.send(data);
 });
 
