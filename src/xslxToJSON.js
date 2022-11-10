@@ -1,8 +1,8 @@
 const fs = require("fs");
 const xlsx = require("node-xlsx");
-const previousTimeString = "20220928";
-const timeString = "20221024";
-const newFileName = "1024";
+const previousTimeString = "20221024";
+const timeString = "20221110";
+const newFileName = "1110";
 
 async function main() {
   const addressNameList = xlsx.parse(
@@ -15,8 +15,10 @@ async function main() {
       .toString()
   );
   const newMintedNFT = Object.assign({}, mintedNFT);
-
   for (let i = 1; i < addressNameList.length; i++) {
+    if (addressNameList[i].length === 0) {
+      continue;
+    }
     newMintedNFT[Object.keys(mintedNFT).length + i] = {
       name: `企業ESG永續規劃師研習證書 #${Object.keys(mintedNFT).length + i}`,
       description: "",
