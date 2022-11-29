@@ -1,8 +1,8 @@
 const fs = require("fs");
 const xlsx = require("node-xlsx");
 const previousTimeString = "20221024";
-const timeString = "20221110";
-const newFileName = "1110";
+const timeString = "20221128";
+const newFileName = "1128";
 
 async function main() {
   const addressNameList = xlsx.parse(
@@ -25,7 +25,7 @@ async function main() {
       attributes: {
         姓名: addressNameList[i][1],
         證照名稱: "企業ESG永續規劃師研習證書",
-        發證日期: "2022 年 10 月 22 日",
+        發證日期: "2022 年 11 月 18 日",
         發證單位: "財團法人商業發展研究院",
       },
       animation_url: ``,
