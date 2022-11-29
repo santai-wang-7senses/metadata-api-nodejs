@@ -1,6 +1,6 @@
 const fs = require("fs");
 const xlsx = require("node-xlsx");
-const previousTimeString = "20221024";
+const previousTimeString = "20221110";
 const timeString = "20221128";
 const newFileName = "1128";
 
