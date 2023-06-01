@@ -1,12 +1,11 @@
 const fs = require("fs");
 const xlsx = require("node-xlsx");
-const previousTimeString = "20221128";
-const timeString = "20221229";
-const newFileName = "1229";
+const previousTimeString = "20221229";
+const timeString = "20230601";
 
 async function main() {
   const addressNameList = xlsx.parse(
-    `${__dirname}/../transferedNFTDOCs/${newFileName}.xlsx`
+    `${__dirname}/../transferedNFTDOCs/${timeString}.xlsx`
   )[0].data;
 
   const mintedNFT = JSON.parse(
@@ -25,7 +24,7 @@ async function main() {
       attributes: {
         姓名: addressNameList[i][1],
         證照名稱: "企業ESG永續規劃師研習證書",
-        發證日期: "2022 年 12 月 24 日",
+        發證日期: "2023 年 04 月 15 日",
         發證單位: "財團法人商業發展研究院",
       },
       animation_url: ``,

@@ -18,7 +18,7 @@ app.get("/", function (req, res) {
 app.get("/api/token/:token_id/metadata.json", function (req, res) {
   const tokenId = parseInt(req.params.token_id).toString();
   const data = JSON.parse(
-    fs.readFileSync("./mintedNFTs/20221229.json").toString()
+    fs.readFileSync("./mintedNFTs/20230601.json").toString()
   )[tokenId];
   res.send(data);
 });
